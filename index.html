@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="pokedex.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <h1><img src="pokeball.png" style="width: 70px;">  Pokedex API  <img src="pokeball2.png" style="width: 70px;"></h1>
+
+	<form>
+		<input id="pokemonName" class="form-control"placeholder="Enter Pokemon name">
+		<button class="submit btn btn-info">Submit</button>
+	</form>
+
+	<div class="card">
+		<h2>Name: </h2><span><p class="name"></p></span>
+		<h2>Type: </h2><span><p class="type"></p></span>
+		<h2>Description: </h2><span><p class="description"></p></span> 
+	</div>
+
+    <br><br>
+    <div class="card2">
+        <br><br>
+        <h3>API Information</h3>
+        <p>This API retrieves the information of a given pokemon such as their 
+            type, move sets, encounters, evolutions, items, and much more. 
+            This specific impementation of the API retrieves and displays the 
+            name, type, and description of the pokemon. </p>
+        <p>Where this API was found: <a href="https://pokeapi.co/docs/v2">API Documentation</a></p>
+        <p>Options used for the API request:
+            <br>- used GET with the following URL to get the pokemon name and type: http://pokeapi.co/api/v2/pokemon/{name}
+            <br>- used GET with the following URL to get the pokemon species description: http://pokeapi.co/api/v2/pokemon-species/{name}
+        </p>
+        <p>Application for this API: 
+            <br>1. To be used for a large Pokemon directory or gallery
+            <br>2. To gather information for a Wikipedia of Pokemon, an online handbook, or a game</p>
+    </div>
+
+</body>
+<script src="pokedex.js"></script>
+
+</html>
