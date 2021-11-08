@@ -9,7 +9,7 @@ $('.submit').click( function searchPokemon (event){
 		$.ajax({
 			
 			type: 'GET',
-			url: 'https://pokeapi.co/api/v2/pokemon/' + pokemon,
+			url: 'http://pokeapi.co/api/v2/pokemon/' + pokemon,
 			
 			success: function (response) {
 				console.log(response);
@@ -29,7 +29,7 @@ $('.submit').click( function searchPokemon (event){
 		$.ajax({
 			
 			type: 'GET',
-			url: 'https://pokeapi.co/api/v2/pokemon-species/' + pokemon,
+			url: 'http://pokeapi.co/api/v2/pokemon-species/' + pokemon,
 			
 			success: function (response) {
 				console.log(response);	
